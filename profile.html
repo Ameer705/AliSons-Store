@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | AliSons Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/profile.css">
+
+</head>
+
+<body>
+
+<header class="profile-header">
+
+    <a href="index.html" class="logo">
+        <span class="blue">Ali</span><span class="orange">Sons</span>
+    </a>
+
+    <a href="index.html" class="back-home">
+        <i class="fa-solid fa-house"></i>
+        Back To Home
+    </a>
+
+</header>
+
+<section class="profile-section">
+
+    <div class="profile-card">
+
+        <div class="profile-top">
+
+            <div class="profile-avatar">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h2>My Profile</h2>
+
+            <p>Manage your AliSons Store account</p>
+
+        </div>
+<form id="profile-form">
+
+    <div class="input-group">
+
+        <label>Full Name</label>
+
+        <input
+            type="text"
+            id="profile-name"
+            placeholder="Enter your full name">
+
+    </div>
+
+    <div class="input-group">
+
+        <label>Email Address</label>
+
+        <input
+            type="email"
+            id="profile-email"
+            placeholder="Enter your email">
+
+    </div>
+
+    <div class="input-group">
+
+        <label>Phone Number</label>
+
+        <input
+            type="tel"
+            id="profile-phone"
+            placeholder="+966 5XXXXXXXX">
+
+    </div>
+
+    <div class="input-group">
+
+        <label>New Password</label>
+
+        <input
+            type="password"
+            id="profile-password"
+            placeholder="Leave blank to keep current password">
+
+    </div>
+
+    <div class="input-group">
+
+        <label>Confirm Password</label>
+
+        <input
+            type="password"
+            id="profile-confirm-password"
+            placeholder="Confirm new password">
+
+    </div>
+
+    <button
+        type="submit"
+        class="save-btn">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Save Changes
+
+    </button>
+
+</form>
+
+<div class="profile-actions">
+
+    <a href="orders.html" class="action-btn">
+
+        <i class="fa-solid fa-box"></i>
+
+        My Orders
+
+    </a>
+
+    <a href="wishlist.html" class="action-btn">
+
+        <i class="fa-solid fa-heart"></i>
+
+        Wishlist
+
+    </a>
+
+    <button
+        id="logout-btn"
+        class="logout-btn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</div>
+        </div>
+
+    </section>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

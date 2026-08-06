@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | AliSons Store Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="../css/admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<h2>Ali<span>Sons</span></h2>
+
+<p>Admin Panel</p>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="products.html">
+
+<i class="fa-solid fa-box"></i>
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="orders.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Orders
+
+</a>
+
+</li>
+
+<li>
+
+<a href="customers.html">
+
+<i class="fa-solid fa-users"></i>
+
+Customers
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="admin-login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="main-content">
+
+<div class="topbar">
+
+<h1>
+
+Products
+
+</h1>
+
+<a href="add-product.html" class="login-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Product
+
+</a>
+
+</div>
+
+<div class="dashboard-section">
+
+<h2>
+
+Product List
+
+</h2>
+
+<table class="dashboard-table">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Image</th>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Stock</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td>
+
+<img
+src="../images/product1.jpg"
+width="60"
+height="60"
+style="border-radius:8px;object-fit:cover;">
+
+</td>
+
+<td>Teddy Bear</td>
+
+<td>SAR 45.95</td>
+
+<td>50</td>
+
+<td>
+
+<span style="color:green;font-weight:bold;">
+
+In Stock
+
+</span>
+
+</td>
+
+<td>
+
+<button class="login-btn"
+style="padding:8px 12px;font-size:14px;">
+
+Edit
+
+</button>
+
+<button class="login-btn"
+style="padding:8px 12px;font-size:14px;background:#dc2626;">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="7" style="text-align:center;">
+
+More products will appear here.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+<!-- ================= PRODUCT SUMMARY ================= -->
+
+<section style="margin-top:30px;">
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-box"></i>
+
+<h2>1</h2>
+
+<p>Total Products</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-check-circle"></i>
+
+<h2>1</h2>
+
+<p>In Stock</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2>0</h2>
+
+<p>Low Stock</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-xmark-circle"></i>
+
+<h2>0</h2>
+
+<p>Out of Stock</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../js/admin.js"></script>
+
+</body>
+
+</html>

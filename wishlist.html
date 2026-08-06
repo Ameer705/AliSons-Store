@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist | AliSons Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Ali<span>Sons</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="product.html">Products</a></li>
+
+                <li><a href="wishlist.html" class="active">Wishlist</a></li>
+
+                <li>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>❤️ My Wishlist</h1>
+
+        <p>
+            Save your favourite products and move them to your shopping cart anytime.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="wishlist-section">
+
+<div class="container">
+
+<div id="wishlist-empty" class="empty-message" style="display:none;">
+
+<h2>Your Wishlist is Empty</h2>
+
+<p>No favourite products yet.</p>
+
+<a href="product.html" class="btn">
+
+Continue Shopping
+
+</a>
+
+</div>
+
+<table class="cart-table">
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="wishlist-items">
+
+</tbody>
+
+</table>
+
+<div class="wishlist-summary">
+
+<div class="summary-card">
+
+<h3>Total Items</h3>
+
+<h2 id="wishlist-count-summary">0</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Total Value</h3>
+
+<h2 id="wishlist-total">0.00 SAR</h2>
+
+</div>
+
+</div>
+
+<div class="wishlist-actions">
+
+<button id="clear-wishlist-btn" class="clear-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+Clear Wishlist
+
+</button>
+
+<a href="product.html" class="continue-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Continue Shopping
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+
+                <h3>AliSons Store</h3>
+
+                <p>
+                    Fast Delivery • Secure Shopping • Best Prices in Saudi Arabia
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="product.html">Products</a></li>
+
+                    <li><a href="cart.html">Cart</a></li>
+
+                    <li><a href="wishlist.html">Wishlist</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Customer Service</h3>
+
+                <ul>
+
+                    <li><a href="shipping.html">Shipping</a></li>
+
+                    <li><a href="returns.html">Returns</a></li>
+
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📍 Riyadh, Saudi Arabia</p>
+
+                <p>📧 alisonsstore@gmail.com</p>
+
+                <p>📞 +966 54 312 7415</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 AliSons Store. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+<script src="js/wishlist.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Product | AliSons Store Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="../css/admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<h2>Ali<span>Sons</span></h2>
+
+<p>Admin Panel</p>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="products.html">
+
+<i class="fa-solid fa-box"></i>
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="orders.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Orders
+
+</a>
+
+</li>
+
+<li>
+
+<a href="customers.html">
+
+<i class="fa-solid fa-users"></i>
+
+Customers
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="admin-login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="main-content">
+
+<div class="topbar">
+
+<h1>
+
+Add Product
+
+</h1>
+
+</div>
+
+<div class="dashboard-section">
+
+<form id="addProductForm">
+
+<div class="input-group">
+
+<label>Product Name</label>
+
+<input
+type="text"
+placeholder="Enter Product Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Category</label>
+
+<select required>
+
+<option value="">Select Category</option>
+
+<option>Toys</option>
+
+<option>Electronics</option>
+
+<option>Home & Kitchen</option>
+
+<option>Fashion</option>
+
+<option>Beauty</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Price (SAR)</label>
+
+<input
+type="number"
+placeholder="45.95"
+step="0.01"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Stock Quantity</label>
+
+<input
+type="number"
+placeholder="50"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Upload Product Image</label>
+
+<input
+type="file"
+accept="image/*">
+
+</div>
+
+<div class="input-group">
+
+<label>Product Description</label>
+
+<textarea
+rows="6"
+placeholder="Write product description..."></textarea>
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Product
+
+</button>
+
+</form>
+
+</div>
+</main>
+
+</div>
+
+<script src="../js/admin.js"></script>
+
+</body>
+
+</html>

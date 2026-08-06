@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports | AliSons Store Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="../css/admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<h2>Ali<span>Sons</span></h2>
+
+<p>Admin Panel</p>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="products.html">
+<i class="fa-solid fa-box"></i>
+Products
+</a>
+</li>
+
+<li>
+<a href="orders.html">
+<i class="fa-solid fa-cart-shopping"></i>
+Orders
+</a>
+</li>
+
+<li>
+<a href="customers.html">
+<i class="fa-solid fa-users"></i>
+Customers
+</a>
+</li>
+
+<li class="active">
+<a href="reports.html">
+<i class="fa-solid fa-chart-line"></i>
+Reports
+</a>
+</li>
+
+<li>
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+</li>
+
+<li>
+<a href="admin-login.html">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<main class="main-content">
+
+<div class="topbar">
+
+<h1>Reports & Analytics</h1>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-sack-dollar"></i>
+
+<h2>SAR 415.65</h2>
+
+<p>Total Revenue</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h2>7</h2>
+
+<p>Total Orders</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>2</h2>
+
+<p>Total Customers</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-box"></i>
+
+<h2>1</h2>
+
+<p>Total Products</p>
+
+</div>
+
+</div>
+
+<div class="dashboard-section">
+
+<h2>Monthly Sales Report</h2>
+
+<table class="dashboard-table">
+
+<thead>
+
+<tr>
+
+<th>Month</th>
+
+<th>Orders</th>
+
+<th>Revenue</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>August 2026</td>
+
+<td>7</td>
+
+<td>SAR 415.65</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3" style="text-align:center;">
+
+More reports will appear here.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+<!-- ================= BEST SELLING PRODUCTS ================= -->
+
+<div class="dashboard-section" style="margin-top:30px;">
+
+<h2>Best Selling Products</h2>
+
+<table class="dashboard-table">
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Units Sold</th>
+
+<th>Revenue</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Teddy Bear</td>
+
+<td>7</td>
+
+<td>SAR 321.65</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3" style="text-align:center;">
+
+More best-selling products will appear here.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ================= INVENTORY REPORT ================= -->
+
+<div class="dashboard-section" style="margin-top:30px;">
+
+<h2>Inventory Summary</h2>
+
+<table class="dashboard-table">
+
+<thead>
+
+<tr>
+
+<th>Status</th>
+
+<th>Products</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>In Stock</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Low Stock</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Out of Stock</td>
+
+<td>0</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ================= EXPORT BUTTONS ================= -->
+
+<div style="margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;">
+
+<button class="login-btn">
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Export PDF
+
+</button>
+
+<button class="login-btn">
+
+<i class="fa-solid fa-file-excel"></i>
+
+Export Excel
+
+</button>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/admin.js"></script>
+
+</body>
+
+</html>

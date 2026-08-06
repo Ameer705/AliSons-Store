@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | AliSons Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            Ali<span>Sons</span>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="product.html">Products</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="checkout.html">Checkout</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="icons">
+
+            <a href="wishlist.html" class="icon-box">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span class="count" id="wishlist-count">0</span>
+
+            </a>
+
+            <a href="cart.html" class="icon-box">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="count" id="cart-count">0</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= CHECKOUT ================= -->
+
+<section class="checkout-page">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Checkout</h2>
+
+<p>Complete your order by filling in your details.</p>
+
+</div>
+
+<div class="checkout-grid">
+
+<!-- Customer Form -->
+
+<div class="checkout-form">
+
+<h3>Customer Information</h3>
+
+<form id="checkout-form">
+
+<input
+type="text"
+id="full-name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+id="address"
+placeholder="Street Address"
+required>
+
+<input
+type="text"
+id="city"
+placeholder="City"
+required>
+
+<input
+type="text"
+id="zip"
+placeholder="ZIP / Postal Code">
+
+<select id="country">
+
+<option value="Saudi Arabia">
+Saudi Arabia
+</option>
+
+<option value="United Arab Emirates">
+United Arab Emirates
+</option>
+
+<option value="Qatar">
+Qatar
+</option>
+
+<option value="Bahrain">
+Bahrain
+</option>
+
+<option value="Kuwait">
+Kuwait
+</option>
+
+<option value="Oman">
+Oman
+</option>
+
+</select>
+
+<textarea
+id="notes"
+rows="4"
+placeholder="Order Notes (Optional)"></textarea>
+<!-- ================= ORDER SUMMARY ================= -->
+
+</form>
+
+</div>
+
+<!-- Order Summary -->
+
+<div class="checkout-summary">
+
+    <h3>Order Summary</h3>
+
+    <div id="checkout-items">
+
+        <!-- Items loaded by checkout.js -->
+
+    </div>
+
+    <hr>
+
+    <div class="summary-row">
+
+        <span>Items</span>
+
+        <span id="checkout-item-count">0</span>
+
+    </div>
+
+    <div class="summary-row">
+
+        <span>Subtotal</span>
+
+        <span id="checkout-subtotal">0.00 SAR</span>
+
+    </div>
+
+    <div class="summary-row">
+
+        <span>Shipping</span>
+
+        <span>Free</span>
+
+    </div>
+
+    <hr>
+
+    <div class="summary-row total">
+
+        <strong>Total</strong>
+
+        <strong id="checkout-total">0.00 SAR</strong>
+
+    </div>
+
+    <br>
+
+    <h3>Payment Method</h3>
+
+    <div class="payment-methods">
+
+        <label>
+
+            <input
+                type="radio"
+                name="payment"
+                value="Cash on Delivery"
+                checked>
+
+            Cash on Delivery (COD)
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input
+                type="radio"
+                name="payment"
+                value="Mada">
+
+            Mada
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input
+                type="radio"
+                name="payment"
+                value="Visa">
+
+            Visa / MasterCard
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input
+                type="radio"
+                name="payment"
+                value="Apple Pay">
+
+            Apple Pay
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input
+                type="radio"
+                name="payment"
+                value="STC Pay">
+
+            STC Pay
+
+        </label>
+
+    </div>
+
+    <br>
+
+    <button
+        type="submit"
+        form="checkout-form"
+        id="place-order-btn"
+        class="cart-btn"
+        style="width:100%;">
+
+        <i class="fa-solid fa-lock"></i>
+
+        Place Order
+
+    </button>
+
+    <br><br>
+
+    <div class="secure-checkout">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <strong>100% Secure Checkout</strong>
+
+        <p>
+
+            Your personal information is protected and encrypted.
+
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h3>AliSons Store</h3>
+
+            <p>
+                Shop Online with Fast Delivery,
+                Best Prices and Secure Shopping.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="https://wa.me/966543127415" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Customer Service</h3>
+
+            <a href="#">Shipping Policy</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 AliSons Store. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+    href="https://wa.me/966543127415"
+    class="whatsapp-button"
+    target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<a href="#" class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/script.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AliSons Store | Shop Online</title>
+
+    <meta name="description" content="AliSons Store - Shop Online with Fast Delivery, Best Prices and Secure Shopping.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Ali<span>Sons</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#categories">Categories</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="icons">
+
+    <a href="wishlist.html" class="icon-box">
+        <i class="fa-solid fa-heart"></i>
+        <span class="count" id="wishlist-count">0</span>
+    </a>
+
+    <a href="cart.html" class="icon-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="count" id="cart-count">0</span>
+    </a>
+
+    <div class="user-menu">
+
+        <button id="user-btn" class="user-btn">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="user-name">Guest</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+        <div id="user-dropdown" class="user-dropdown">
+
+    <div class="user-info">
+
+        <i class="fa-solid fa-user-circle"></i>
+
+        <h4 id="dropdown-user-name">Ameer Hamza</h4>
+
+        <p id="dropdown-user-email">user@email.com</p>
+
+    </div>
+
+    <hr>
+
+    <a href="profile.html">
+        <i class="fa-solid fa-user"></i>
+        My Profile
+    </a>
+
+    <a href="orders.html">
+        <i class="fa-solid fa-box"></i>
+        My Orders
+    </a>
+
+    <a href="wishlist.html">
+        <i class="fa-solid fa-heart"></i>
+        Wishlist
+    </a>
+
+    <a href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+    </a>
+
+    <hr>
+
+    <a href="#" id="logout-btn" class="logout-link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-text fade-up">
+
+            <h1>
+                Shop Smarter with
+                <br>
+                AliSons Store
+            </h1>
+
+            <p>
+
+                Fast Delivery • Secure Shopping • Best Prices in Saudi Arabia
+
+            </p>
+
+            <a href="#products" class="shop-btn">
+
+                Shop Now
+
+            </a>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products...">
+
+                <button id="searchBtn">
+
+                    <i class="fa-solid fa-search"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image fade-up">
+
+            <img src="images/hero.png" alt="AliSons Store">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <p>Choose your favorite category</p>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card" onclick="filterProducts('All')">
+                <i class="fa-solid fa-store"></i>
+                <h3>All Products</h3>
+                <p>Browse everything</p>
+            </div>
+
+            <div class="category-card" onclick="filterProducts('Toys')">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h3>Toys</h3>
+                <p>Fun for kids</p>
+            </div>
+
+            <div class="category-card" onclick="filterProducts('Electronics')">
+                <i class="fa-solid fa-headphones"></i>
+                <h3>Electronics</h3>
+                <p>Latest gadgets</p>
+            </div>
+
+            <div class="category-card" onclick="filterProducts('Fashion')">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Fashion</h3>
+                <p>Trending styles</p>
+            </div>
+
+            <div class="category-card" onclick="filterProducts('Travel')">
+                <i class="fa-solid fa-suitcase"></i>
+                <h3>Travel</h3>
+                <p>Bags & accessories</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Featured Products</h2>
+
+            <p>Best sellers from AliSons Store</p>
+
+        </div>
+
+        <div class="products-top">
+
+            <select id="sort-products">
+
+                <option value="">Sort Products</option>
+
+                <option value="price-low">Price: Low to High</option>
+
+                <option value="price-high">Price: High to Low</option>
+
+                <option value="name-asc">Name: A-Z</option>
+
+                <option value="name-desc">Name: Z-A</option>
+
+            </select>
+
+        </div>
+
+        <!-- Products are loaded here by script.js -->
+
+        <div
+            class="products-grid"
+            id="products-container">
+
+        </div>
+
+        <!-- Pagination -->
+
+        <div class="pagination">
+
+            <button id="prev-page">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+            <span id="page-info">
+
+                Page 1
+
+            </span>
+
+            <button id="next-page">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FLASH SALE ================= -->
+
+<section class="flash-sale">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>🔥 Flash Sale</h2>
+            <p>Limited-time offers on selected products</p>
+        </div>
+
+        <div class="flash-grid">
+
+            <div class="flash-card">
+                <h3>Teddy Bear</h3>
+                <p>Soft & Premium Quality</p>
+                <div class="flash-price">29.99 SAR</div>
+                <a href="#products" class="shop-btn">Buy Now</a>
+            </div>
+
+            <div class="flash-card">
+                <h3>Wireless Headphones</h3>
+                <p>Crystal Clear Sound</p>
+                <div class="flash-price">99.99 SAR</div>
+                <a href="#products" class="shop-btn">Buy Now</a>
+            </div>
+
+            <div class="flash-card">
+                <h3>Travel Backpack</h3>
+                <p>Perfect for Daily Travel</p>
+                <div class="flash-price">79.99 SAR</div>
+                <a href="#products" class="shop-btn">Buy Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-box-open"></i>
+                <h2>500+</h2>
+                <p>Products</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h2>2,000+</h2>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>24H</h2>
+                <p>Fast Delivery</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-star"></i>
+                <h2>4.9</h2>
+                <p>Customer Rating</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CUSTOMER REVIEWS ================= -->
+
+<section class="reviews">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Customer Reviews</h2>
+            <p>What our customers say about us</p>
+        </div>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+
+                <img src="images/user1.jpg" alt="Customer">
+
+                <h4>Ahmed</h4>
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Amazing service and very fast delivery.
+                    Highly recommended!
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="images/user2.jpg" alt="Customer">
+
+                <h4>Fatima</h4>
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Product quality exceeded my expectations.
+                    I'll definitely order again.
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="images/user3.jpg" alt="Customer">
+
+                <h4>Mohammed</h4>
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Great prices, secure checkout,
+                    and excellent customer support.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest deals, discounts and new arrivals.</p>
+        </div>
+
+        <div class="newsletter-box">
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email address">
+
+            <button class="shop-btn" id="subscribeBtn">
+                Subscribe
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="container about-content">
+
+        <div class="about-text">
+
+            <h3>About AliSons Store</h3>
+
+            <p>
+                AliSons Store is an online shopping destination dedicated to
+                providing quality products at affordable prices across Saudi Arabia.
+            </p>
+
+            <p>
+                Our mission is to make online shopping simple, secure,
+                and enjoyable for every customer.
+            </p>
+
+            <ul class="about-list">
+
+                <li><i class="fa-solid fa-check"></i> Fast Delivery</li>
+
+                <li><i class="fa-solid fa-check"></i> Secure Payments</li>
+
+                <li><i class="fa-solid fa-check"></i> Quality Products</li>
+
+                <li><i class="fa-solid fa-check"></i> Friendly Customer Support</li>
+
+            </ul>
+
+        </div>
+
+        <div class="about-image">
+
+            <i class="fa-solid fa-store about-icon"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Contact Us</h2>
+
+            <p>We're always happy to help.</p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Address</h3>
+
+                <p>Riyadh, Saudi Arabia</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <p>+966 54 312 7415</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>alisonsstore@gmail.com</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h3>AliSons Store</h3>
+
+            <p>
+                Shop Online with Fast Delivery,
+                Best Prices and Secure Shopping.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Customer Service</h3>
+
+            <a href="shipping.html">Shipping</a>
+
+<a href="returns.html">Returns</a>
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 AliSons Store. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- WhatsApp -->
+
+<a
+    href="https://wa.me/966543127415"
+    class="whatsapp-button"
+    target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- Back To Top -->
+
+<a href="#" class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+# AliSons Store Robots File
+
+User-agent: *
+
+Allow: /
+
+Disallow: /admin/
+
+Disallow: /private/
+
+Disallow: /temp/
+
+Sitemap: https://www.alisons.sa/sitemap.xml

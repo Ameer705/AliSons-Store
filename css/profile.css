@@ -1,0 +1,271 @@
+/* ==========================================
+   AliSons Store Profile Page
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+    min-height:100vh;
+
+    padding:40px 20px;
+
+}
+
+.profile-header{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.logo{
+
+    text-decoration:none;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.blue{
+
+    color:#2563eb;
+
+}
+
+.orange{
+
+    color:#f97316;
+
+}
+
+.back-home{
+
+    text-decoration:none;
+
+    background:#ffffff;
+
+    color:#2563eb;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-home:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+.profile-section{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.profile-card{
+
+    width:100%;
+
+    max-width:650px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+    animation:fadeUp .6s ease;
+
+}
+
+.profile-top{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.profile-avatar{
+
+    width:100px;
+
+    height:100px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#ffffff;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.profile-top h2{
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.profile-top p{
+
+    color:#777;
+
+}
+/* ==========================================
+   PROFILE FORM
+========================================== */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+.save-btn{
+    width:100%;
+    padding:14px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:10px;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.profile-actions{
+    margin-top:30px;
+    display:grid;
+    gap:15px;
+}
+
+.action-btn,
+.logout-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.action-btn{
+    background:#f3f4f6;
+    color:#333;
+}
+
+.action-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.logout-btn{
+    background:#dc2626;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    background:#b91c1c;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media (max-width:768px){
+
+    .profile-header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .profile-card{
+        padding:25px;
+    }
+
+}

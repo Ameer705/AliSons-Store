@@ -1,0 +1,229 @@
+/* ==========================================
+   AliSons Store Login Page
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.login-container{
+
+    width:100%;
+
+    max-width:450px;
+
+}
+
+.login-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.20);
+
+    animation:fadeUp .6s ease;
+
+}
+
+.login-logo{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.login-logo a{
+
+    text-decoration:none;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.blue{
+
+    color:#2563eb;
+
+}
+
+.orange{
+
+    color:#f97316;
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+    color:#222;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+/* ==========================================
+   Login Form
+========================================== */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:50px;
+}
+
+#toggle-password{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#666;
+    font-size:18px;
+}
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+    font-size:14px;
+}
+
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+.login-options a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.login-options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.register-link{
+    text-align:center;
+    margin-top:25px;
+    color:#555;
+}
+
+.register-link a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+.login-footer{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-footer a{
+    color:#666;
+    text-decoration:none;
+}
+
+.login-footer a:hover{
+    color:#2563eb;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | AliSons Store Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="../css/admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-container">
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<h2>Ali<span>Sons</span></h2>
+
+<p>Admin Panel</p>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="products.html"><i class="fa-solid fa-box"></i> Products</a></li>
+
+<li><a href="orders.html"><i class="fa-solid fa-cart-shopping"></i> Orders</a></li>
+
+<li><a href="customers.html"><i class="fa-solid fa-users"></i> Customers</a></li>
+
+<li><a href="reports.html"><i class="fa-solid fa-chart-line"></i> Reports</a></li>
+
+<li class="active">
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+</li>
+
+<li><a href="admin-login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</aside>
+
+<main class="main-content">
+
+<div class="topbar">
+
+<h1>Store Settings</h1>
+
+</div>
+
+<div class="dashboard-section">
+
+<form id="settingsForm">
+
+<div class="input-group">
+
+<label>Store Name</label>
+
+<input
+type="text"
+value="AliSons Store">
+
+</div>
+
+<div class="input-group">
+
+<label>Business Email</label>
+
+<input
+type="email"
+value="alisonsstore@gmail.com">
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="text"
+value="+966543127415">
+
+</div>
+
+<div class="input-group">
+
+<label>Website</label>
+
+<input
+type="url"
+placeholder="https://www.alisons.sa">
+
+</div>
+
+<div class="input-group">
+
+<label>Store Address</label>
+
+<textarea rows="4"
+placeholder="Enter your business address"></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>Store Logo</label>
+
+<input
+type="file"
+accept="image/*">
+
+</div>
+<div class="input-group">
+
+<label>WhatsApp Number</label>
+
+<input
+type="text"
+value="+966543127415">
+
+</div>
+
+<div class="input-group">
+
+<label>Facebook URL</label>
+
+<input
+type="url"
+placeholder="https://facebook.com/yourpage">
+
+</div>
+
+<div class="input-group">
+
+<label>Instagram URL</label>
+
+<input
+type="url"
+placeholder="https://instagram.com/yourpage">
+
+</div>
+
+<div class="input-group">
+
+<label>X (Twitter) URL</label>
+
+<input
+type="url"
+placeholder="https://x.com/yourpage">
+
+</div>
+
+<div class="input-group">
+
+<label>Payment Methods</label>
+
+<select>
+
+<option>Cash on Delivery</option>
+
+<option>Mada</option>
+
+<option>Visa</option>
+
+<option>Mastercard</option>
+
+<option>Apple Pay</option>
+
+<option>STC Pay</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Shipping Fee (SAR)</label>
+
+<input
+type="number"
+value="25">
+
+</div>
+
+<div class="input-group">
+
+<label>Free Shipping Above (SAR)</label>
+
+<input
+type="number"
+value="199">
+
+</div>
+
+<button
+type="submit"
+class="login-btn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Settings
+
+</button>
+
+</form>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/admin.js"></script>
+
+</body>
+
+</html>
